@@ -1,0 +1,402 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  padding: 0; 
+  background-color: #00000000;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+}
+
+
+/* Global styles */
+body {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+  /*background: linear-gradient(90deg, rgb(13, 9, 10) 0%, rgb(38, 64, 50) 100%);*/
+  
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.neonText {
+  text-shadow: 
+  0 0 7px #fff, 
+  0 0 10px #fff, 
+  0 0 21px #fff,
+  0 0 42px #0f0, 
+  0 0 82px #0f0, 
+  0 0 92px #0f0, 
+  0 0 102px #0f0, 
+  0 0 151px #0f0; 
+  
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 32px;
+  animation: glow 0,50s ease-in-out infinite alternate-reverse;
+  margin: -500px;
+}
+
+@keyframes glow {
+    100%{
+        text-shadow: 
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0f0,
+        0 0 80px #0f0,
+        0 0 90px #0f0,
+        0 0 100px #0f0,
+        0 0 150px #0f0;
+    }
+    0%{
+      text-shadow: 
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #0f0,
+      0 0 73px #0f0,
+      0 0 80px #0f0,
+      0 0 94px #0f0,
+      0 0 140px #0f0;
+    }
+}
+
+h2 {
+  padding: 0;
+  text-align: center;
+  border: transparent;
+  text-decoration: transparent;
+}
+
+h3 {
+  color: #0f0;
+  padding: 0;
+  text-align: center;
+  border: transparent;
+  text-decoration: transparent;
+}
+
+
+/*.center {
+    margin-top: 400;
+    /*min-height: -1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  
+}
+
+.center2 {
+  
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}*/
+
+
+
+/* Main styles */
+main {
+  /*padding: 2rem;*/
+  max-width: 960px;
+  margin: auto;
+}
+
+
+/* CARDS */
+.container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+
+  /* From https://css.glass */
+  /*background: rgba(3, 4, 3, 0.36);*/
+  background: #111;
+  /*border-radius: 16px;*/
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(3, 4, 3, 0.17);
+  width: 270px;
+  height: auto;
+  margin: 10px;
+  /*border-radius: 15px;*/
+  text-align: center;
+  text-decoration: underline;
+  clip-path: polygon(6% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 5%);
+}
+
+.card-image {
+
+  background-color: #131313;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  /*border-radius: 15px 0 0 0;*/
+}
+
+.card-1 {
+  background-image: url("../science_fiction.png");
+}
+.card-2 {
+  background-image: url("https://i.blogs.es/595379/diseno-sin-titulo/1366_2000.jpg");
+}
+
+.card-3 {
+  background-image: url("https://cdn.wallpapersafari.com/1/80/5Mj7BR.jpg");
+}
+
+.card-4 {
+  background-image: url("https://cdn.wallpapersafari.com/32/85/vDGcLa.jpg");
+}
+
+.card-5 {
+  background-image: url("../dead-space-2023-4k-wallpaper-uhdpaper.com-175@1@j.jpg");
+}
+
+.card-6 {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Doom-Eternal-HD-Wallpaper-Free-download.jpg");
+}
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: underline;
+}
+
+.card:hover {
+  background-color: #111;
+  color: #f1f1f1;
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+/* here finish the cards */
+
+/* CARD'S BUTTON */
+/* === removing default button style ===*/
+.button {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 4px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #0f0;
+  --fs-size: 0.8em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #332E33;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #332E33;
+}
+
+/* Footer styles */
+footer {
+  padding: 1rem 2rem;
+  /* background-color: #131313; */
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+h5 {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  margin:auto
+}
+
+h6 {
+  text-align: center;
+  text-decoration: underline;
+  margin: auto;
+}
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+} 
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #0f0;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  /*margin: 0svb;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;*/
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  clip-path: polygon(11% 0, 100% 0, 100% 69%, 90% 100%, 0 100%, 0 27%);
+  /*border-radius: 0.6em;*/
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  
+}
+
+
+.openbtn:hover {
+  background-color: rgba(0, 255, 0, 0.322);
+}
+
+.openbtn:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 4.s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);;
+}
+
+.openbtn:hover:before {
+  transform: translateX(15em);
+}
+
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+} 
+
+
+
+
+
+
